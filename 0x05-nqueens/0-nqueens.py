@@ -9,9 +9,6 @@ The N queens puzzle
 import sys
 
 
-
-
-
 solutions = []
 
 """The list of possible solutions to the N queens problem.
@@ -29,9 +26,6 @@ pos = None
 """The list of possible positions on the chessboard.
 
 """
-
-
-
 
 
 def get_input():
@@ -75,9 +69,6 @@ def get_input():
     return n
 
 
-
-
-
 def is_attacking(pos0, pos1):
 
     """Checks if the positions of two queens are in an attacking mode.
@@ -103,9 +94,6 @@ def is_attacking(pos0, pos1):
         return True
 
     return abs(pos0[0] - pos1[0]) == abs(pos0[1] - pos1[1])
-
-
-
 
 
 def group_exists(group):
@@ -145,9 +133,6 @@ def group_exists(group):
             return True
 
     return False
-
-
-
 
 
 def build_solution(row, group):
@@ -195,9 +180,6 @@ def build_solution(row, group):
             group.pop(len(group) - 1)
 
 
-
-
-
 def get_solutions():
 
     """Gets the solutions for the given chessboard size.
@@ -213,9 +195,6 @@ def get_solutions():
     group = []
 
     build_solution(a, group)
-
-
-
 
 
 n = get_input()
